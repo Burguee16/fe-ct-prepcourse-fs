@@ -8,14 +8,14 @@ function esPositivo(num) {
    // Si el número es negativo ---> "Es negativo".
    // Si el número es 0, devuelve false.
    // Tu código:
-   if(num<0){
-      console.log("Es positivo");
+   if (num>0){
+      return "Es positivo";
    }
-   else if(num===0){
+   else if (num === 0 ){
       return false;
    }
-   else {
-      console.log("Es negativo");
+   else{
+      return "Es negativo";
    }
    
    }
@@ -46,7 +46,7 @@ function obtenerSaludo(nombre) {
    // Tu código:
    var uno = "Hola ";
    var dos = nombre;
-   var tres = " !";
+   var tres = "!";
    return (uno + dos + tres);
 }
 
