@@ -61,10 +61,10 @@ function arrayContiene(array, elemento) {
    // Verifica si el elemento existe dentro del arreglo recibido.
    // Retornar true si está, o false si no está.
    // Tu código:
-   for (let i =0;i<array.length;i++){
-      if (array[i]===elemento);
-      return true;
-
+   for (let i = 0; i <array.length; i++){
+      if(array[i] === elemento){
+         return true;
+      }
    }
    return false;
 }
@@ -142,15 +142,12 @@ function diaDeLaSemana(numeroDeDia) {
    // Realiza una función que, dado el número del día de la semana, retorne: "Es fin de semana"
    // si el día corresponde a "Sábado" o "Domingo", y "Es dia laboral" en caso contrario.
    // Tu código:
-   var dia = numeroDeDia[0];
-   for (let i = 0; i <numeroDeDia.length;i++){
-      if(numeroDeDia[i]===1 || numeroDeDia[i] === 7){
-         return ("Es fin de semana");}
-         else {
-            return ("Es dia laboral");
-      
-      
-   
+   if(numeroDeDia === 1 || numeroDeDia === 7 ){
+      return "Es fin de semana";
+   }
+   else{
+      return "Es dia laboral";
+   }
 }
 
 function empiezaConNueve(num) {
